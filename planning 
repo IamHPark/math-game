@@ -1,0 +1,29 @@
+- 2 players
+- starts with 3 lives
+- take turn to answer question
+- lose a life when mis-answer
+- end of turn, ouput the new scores for both
+- when one loose all lives, game end
+- should anounce who wins
+
+2-players
+math addition problems
+two numbers between 1 to 20
+life
+
+class Player : has 3 lives, when fail answering, loose one live
+
+- answer : answer the question
+- check : check the answer player puts
+- loose live : when fail answer
+  class Questions : have 2 numbers between 1 and 20, add random 2 numbers
+- generate random number
+- ask question
+  class Result
+- show result who wins
+
+game class -> call info from the other class
+inside, generate players,
+responding to the users
+
+players

@@ -1,23 +1,31 @@
+
 class Questions
-  attr_accessor :num1,
 
   def initialize
     @num1 = rand(1..20)
     @num2 = rand(1..20)
-    puts "What does #{@num1} plus #{@num2} equal?"
+  end
+
+  def ask
+    return "What does #{@num1} plus #{@num2} equal?"
   end
 
   def answer
     @answer = gets.chomp
   end
 
-  def correct?
+  def validate
     sum = @num1 + @num2
-    if sum == @answer.to_i
-      puts "Yes. you are correct!"
-    else
-      puts "Seriously? No!"
-    end
+    return sum == @answer.to_i
+    #   return true
+    #   correct = true
+    #   # puts correct
+    #   puts "Yes. you are correct!"
+    # else
+    #   return false
+    #   correct = false
+    #   # # puts correct
+      # puts "Seriously? No!"
   end
 
 end
